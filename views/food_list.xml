@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="list_food_act_window" model="ir.actions.act_window">
+        <field name="name">foods</field>
+        <field name="res_model">food_reservation.foods</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                خالیه برادر من، خالی!
+            </p>
+        </field>
+    </record>
+    <record id="list_food_search_view" model="ir.ui.view">
+        <field name="name">food_reservation.search</field>
+        <field name="model">food_reservation.foods</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="food_type"/>
+<!--                <filter neme="filter_poloyi" string="poloyi" domain="[('food_type', '=', 'poloyi')]"/>-->
+            </search>
+        </field>
+    </record>
+    <record id="list_food_tree_view" model="ir.ui.view">
+        <field name="name">food_reservation.tree</field>
+        <field name="model">food_reservation.foods</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="food_type"/>
+            </tree>
+        </field>
+    </record>
+    <record id="list_food_form_view" model="ir.ui.view">
+        <field name="name">food_reservation.form</field>
+        <field name="model">food_reservation.foods</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="food_type"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.food_reservation.users,access_food_reservation_users,food_reservation.model_food_reservation_users,base.group_user,1,1,1,1
+access.food_reservation.foods,access_food_reservation_foods,food_reservation.model_food_reservation_foods,base.group_user,1,1,1,1
+access.food_reservation.date_foods,access_food_reservation_date_foods,food_reservation.model_food_reservation_date_foods,base.group_user,1,1,1,1
+access.food_reservation.select,access_food_reservation_select,food_reservation.model_food_reservation_select,base.group_user,1,1,1,1

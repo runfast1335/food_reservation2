@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="date_food_act_window" model="ir.actions.act_window">
+        <field name="name">date</field>
+        <field name="res_model">food_reservation.date_foods</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                خالیه برادر من، خالی?!
+            </p>
+        </field>
+    </record>
+    <record id="date_food_tree_view" model="ir.ui.view">
+        <field name="name">food_reservation.tree</field>
+        <field name="model">food_reservation.date_foods</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date"/>
+                <field name="poloyi_id"/>
+                <field name="khorack_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="date_food_form_view" model="ir.ui.view">
+        <field name="name">food_reservation.form</field>
+        <field name="model">food_reservation.date_foods</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                            <field name="poloyi_id"/>
+                            <field name="khorack_id"/>
+                        </group>
+                        <group>
+
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

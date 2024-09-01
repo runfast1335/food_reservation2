@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem
+            id="food_reservation_menu_root"
+            name="FoodReserve"
+            sequence="2"
+    />
+    <menuitem
+            id="food_reservation_users"
+            name="users"
+            parent="food_reservation_menu_root"
+            action="users_reserve_act_window"
+            sequence="0"
+    />
+    <menuitem
+            id="food_reservation_foods"
+            name="foods"
+            parent="food_reservation_menu_root"
+            action="list_food_act_window"
+            sequence="1"
+    />
+    <menuitem
+            id="food_reservation_date"
+            name="date"
+            parent="food_reservation_menu_root"
+            action="date_food_act_window"
+            sequence="2"
+    />
+        <menuitem
+            id="food_reservation_select"
+            name="select"
+            parent="food_reservation_menu_root"
+            action="select_act_window"
+            sequence="3"
+    />
+</odoo>
