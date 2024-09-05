@@ -14,6 +14,8 @@ class DateFoods(models.Model):
                                  domain=[('food_type', '=', 'khorack')])
     # khorakSelect = fields.Boolean(string="انتخاب")
 
+    _sql_constraints = [('unique_date', 'unique (date)', 'قبلا برای امروز برنامه غذایی مشخص کرده اید')]
+
 
 
 
