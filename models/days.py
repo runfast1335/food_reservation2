@@ -6,7 +6,8 @@ class Days(models.Model):
     _name = "food_reservation.days"
     _rec_name = "date"
 
-    date = fields.Date(string="تاریخ", required=True)
+
+    date = fields.Date(string="تاریخ", required=True, help="تاریخی که میخواهید غذا سفارش دهید را انتخاب کنید")
     poloyi_id = fields.Many2one("food_reservation.foods",string="پولویی", required=True,
                                 domain=[('food_type', '=', 'poloyi')])
     khorack_id = fields.Many2one("food_reservation.foods",string="خوراک", required=True,
