@@ -12,8 +12,8 @@
     'depends': [],
     'data': [
         'security/ir.model.access.csv',
+        'views/days.xml',
         'views/Select.xml',
-        'views/food_date.xml',
         'views/food_list.xml',
         'views/user.xml',
         'views/menu.xml',
