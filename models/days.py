@@ -11,6 +11,7 @@ class Days(models.Model):
                                 domain=[('food_type', '=', 'poloyi')])
     khorack_id = fields.Many2one("food_reservation.foods",string="خوراک", required=True,
                                  domain=[('food_type', '=', 'khorack')])
+    day_off = fields.Boolean()
 
     _sql_constraints = [('unique_date', 'unique (date)', 'قبلا برای امروز برنامه غذایی مشخص کرده اید')]
 

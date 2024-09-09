@@ -32,6 +32,7 @@
                             <field name="date"/>
                             <field name="poloyi_id"/>
                             <field name="khorack_id"/>
+                            <field name="day_off"/>
                         </group>
                         <group>
 
