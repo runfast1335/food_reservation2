@@ -7,7 +7,13 @@ class Foods(models.Model):
 
 
     name = fields.Char(string="نام غذا", required=True)
-    food_type = fields.Selection([("poloyi", "پلویی"), ("khorack", "خوراک")], string="نوع غذا", required=True)
+    food_type = fields.Selection([("poloyi", "پلویی"), ("khorack", "خوراک")],
+                                 string="نوع غذا", required=True)
+
+    record_file = fields.Many2many('ir.attachment', attachment=True, string="پیوست")
+    record_fileb = fields.Binary(string="پیوست باینری")
+    show_peyvast = fields.Boolean(string='نمایش فایل', default=False)
+
 
     @api.constrains('name')
     def _check_name(self):

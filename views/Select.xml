@@ -42,6 +42,9 @@
                             <field name="poloyiCheck"/>
                             <field name="khorackCheck"/>
                         </group>
+                        <group>
+                            <button name="get_template" type="object" string="دانلود فایل" class="oe_highlight"/>
+                        </group>
                     </group>
                 </sheet>
             </form>

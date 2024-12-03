@@ -17,7 +17,7 @@
             <search>
                 <field name="name"/>
                 <field name="food_type"/>
-<!--                <filter neme="filter_poloyi" string="poloyi" domain="[('food_type', '=', 'poloyi')]"/>-->
+                <!--                <filter neme="filter_poloyi" string="poloyi" domain="[('food_type', '=', 'poloyi')]"/>-->
             </search>
         </field>
     </record>
@@ -40,6 +40,12 @@
                     <group>
                         <group>
                             <field name="name"/>
+                            <field name="show_peyvast"/>
+<!--                            <field name="record_file" widget="binary"-->
+<!--                                   />-->
+                            <field name="record_file" widget="many2many_binary"/>
+                            <field name="record_fileb"
+                            />
                         </group>
                         <group>
                             <field name="food_type"/>
